@@ -1,0 +1,41 @@
+
+#easy riddles
+r_1 = input("Take off my skin, I won't cry, but you will. What Am I? " )
+if r_1 == "onion" or "Onion" or "An onion" or "An Onion" or "an onion":
+    print "Correct, you can move ahead"
+
+r_2 = input("It looks green, it opens red. What you eat is red, but what you spit out is black, what is it? ")
+if r_2 == "Watermelon" or "A watermelon" or "watermelon":
+    print "Correct, you may move ahead"
+
+r_3 = input("I get hot but I never sweat I cook things but I'm not a chef I have a door but you don’t go through me I can sometimes clean myself but I'm not a person I can be gas or electric but I'm not a car, what am I? " )
+if r_3 == "oven" or "an oven" or "An oven" or "oven" or "An Oven":
+    print "Correct, you can move ahead"
+    
+r_4 = input("What table can we eat?" )
+if r_4 == "A vegtable" or "A Vegtable" or "Vegtable" or "Vegtable":
+    print "Correct, you can move ahead"
+r_5 = input("Why do watermelons have fancy weddings? ")
+if r_5 == "They canteloupe" or "They Canteloupe":
+    print "Correct you may move ahead"
+
+#hard riddles
+h_1 = input("I can fly but have no wings. I can cry but I have no eyes. Wherever I go, darkness follows me. What am I? ")
+if h_1 == "A cloud" or "A Cloud":
+    print "Correct, you may move ahead"
+h_2 = input("I always run but never walk, Have a mouth but never talk. What am I? ")
+if h_2 == "A river" or "A River":
+    print "Correct, you may move ahead"
+h_3 = input("Two in a corner, 1 in a room, 0 in a house, but 1 in a shelter. What am I?")
+if h_3 == "R" or "r" or "The letter R" or "The letter r":
+    print "Correct you may move ahead"
+h_4 = input("I have an eye but am blind, a sea, but no water; a bee, but no honey; Tea but no coffee; and a why, but no answer. What am I? ")
+if h_4 == "The alphabet" or "The Alphabet":
+    print "Correct, you may move ahead"
+h_5 = input("How many eggs can you put in an empty box? ")
+if h_5 == "One" or "one":
+    print "Correct, you may move ahead"
+
+riddlelist_1() = (r_1, r_2, r_3, r_4, r_5)
+
+riddlelist_2() = (h_1, h_2, h_3, h_4, h_5)
