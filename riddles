@@ -1,41 +1,143 @@
+import random
+
 
 #easy riddles
-r_1 = input("Take off my skin, I won't cry, but you will. What Am I? " )
-if r_1 == "onion" or "Onion" or "An onion" or "An Onion" or "an onion":
-    print "Correct, you can move ahead"
 
-r_2 = input("It looks green, it opens red. What you eat is red, but what you spit out is black, what is it? ")
-if r_2 == "Watermelon" or "A watermelon" or "watermelon":
-    print "Correct, you may move ahead"
-
-r_3 = input("I get hot but I never sweat I cook things but I'm not a chef I have a door but you don’t go through me I can sometimes clean myself but I'm not a person I can be gas or electric but I'm not a car, what am I? " )
-if r_3 == "oven" or "an oven" or "An oven" or "oven" or "An Oven":
-    print "Correct, you can move ahead"
-    
-r_4 = input("What table can we eat?" )
-if r_4 == "A vegtable" or "A Vegtable" or "Vegtable" or "Vegtable":
-    print "Correct, you can move ahead"
-r_5 = input("Why do watermelons have fancy weddings? ")
-if r_5 == "They canteloupe" or "They Canteloupe":
-    print "Correct you may move ahead"
+def r_1():
+    input("Take off my skin, I won't cry, but you will. What Am I? " )
+    if r_1 == "onion" or "Onion" or "An onion" or "An Onion" or "an onion":
+        print "Correct, you can move ahead"
+        r = r + 1 
+        riddle_1()
+    else:
+        print "You were wrong"
+        riddle_2()
+def r_2(): 
+    input("It looks green, it opens red. What you eat is red, but what you spit out is black, what is it? ")
+    if r_2 == "Watermelon" or "A watermelon" or "watermelon":
+        print "Correct, you may move ahead"
+        r = r + 1 
+        riddle_1()
+    else:
+        print "You were wrong"
+        riddle_2()
+def r_3(): 
+    input("I get hot but I never sweat I cook things but Im not a chef I have a door but you dont go through me I can sometimes clean myself but Im not a person I can be gas or electric but Im not a car, what am I? ")
+    if r_3 == "oven" or "an oven" or "An oven" or "oven" or "An Oven":
+        print "Correct, you can move ahead"
+        r = r + 1 
+        riddle_1()
+    else:
+        print "You were wrong"
+        riddle_2()
+def r_4(): 
+    input("What table can we eat?" )
+    if r_4 == "A vegtable" or "A Vegtable" or "Vegtable" or "Vegtable":
+        print "Correct, you can move ahead"
+        r = r + 1 
+        riddle_1()
+    else:
+        print "You were wrong"
+        riddle_2()
+def r_5(): 
+    input("Why do watermelons have fancy weddings? ")
+    if r_5 == "They canteloupe" or "They Canteloupe":
+        print "Correct you may move ahead"
+        r = r + 1 
+        riddle_1()
+    else:
+        print "You were wrong"
+        riddle_2()
 
 #hard riddles
-h_1 = input("I can fly but have no wings. I can cry but I have no eyes. Wherever I go, darkness follows me. What am I? ")
-if h_1 == "A cloud" or "A Cloud":
-    print "Correct, you may move ahead"
-h_2 = input("I always run but never walk, Have a mouth but never talk. What am I? ")
-if h_2 == "A river" or "A River":
-    print "Correct, you may move ahead"
-h_3 = input("Two in a corner, 1 in a room, 0 in a house, but 1 in a shelter. What am I?")
-if h_3 == "R" or "r" or "The letter R" or "The letter r":
-    print "Correct you may move ahead"
-h_4 = input("I have an eye but am blind, a sea, but no water; a bee, but no honey; Tea but no coffee; and a why, but no answer. What am I? ")
-if h_4 == "The alphabet" or "The Alphabet":
-    print "Correct, you may move ahead"
-h_5 = input("How many eggs can you put in an empty box? ")
-if h_5 == "One" or "one":
-    print "Correct, you may move ahead"
 
-riddlelist_1() = (r_1, r_2, r_3, r_4, r_5)
+def h_1(): 
+    input("I can fly but have no wings. I can cry but I have no eyes. Wherever I go, darkness follows me. What am I? ")
+    if h_1 == "A cloud" or "A Cloud":
+        print "Correct, you may move ahead"
+        r = r + 1 
+        riddle_1()
+    else:
+        water()
+def h_2(): 
+    input("I always run but never walk, Have a mouth but never talk. What am I? ")
+    if h_2 == "A river" or "A River":
+        print "Correct, you may move ahead"
+        r = r + 1 
+        riddle_1()
+    else:
+        water()
+def h_3(): 
+    input("Two in a corner, 1 in a room, 0 in a house, but 1 in a shelter. What am I?")
+    if h_3 == "R" or "r" or "The letter R" or "The letter r":
+        print "Correct you may move ahead"
+        r = r + 1 
+        riddle_1()
+    else:
+        water()
+def h_4(): 
+    input("I have an eye but am blind, a sea, but no water; a bee, but no honey; Tea but no coffee; and a why, but no answer. What am I? ")
+    if h_4 == "The alphabet" or "The Alphabet":
+        print "Correct, you may move ahead"
+        r = r + 1 
+        riddle_1()
+    else:
+        water()
+def h_5(): 
+    input("How many eggs can you put in an empty box? ")
+    if h_5 == "One" or "one":
+        print "Correct, you may move ahead"
+        r = r + 1 
+        riddle_1()
+    else:
+        water()
+#responses
 
-riddlelist_2() = (h_1, h_2, h_3, h_4, h_5)
+def re_1():
+    print "Here's your riddle"
+def re_2():
+    print "Your riddle is"
+def re_3():
+    print "Riddle:"
+
+response_list = [re_1, re_2, re_3]
+    
+riddlelist_1 = [r_1, r_2, r_3, r_4, r_5]
+
+riddlelist_2 = [h_1, h_2, h_3, h_4, h_5]
+
+def start():
+    print "Welcome to the Agricultural Area"
+    print "Here we solve riddles and water plants to get food to the kitchen"
+    q_= input("Are you ready, yes or no? " )
+    if q_ == "Yes" or "yes":
+        print "Okay let's go. Just remember, the more riddles you answer incorrectly, the more plants you have to water"
+    else:
+        print "No food for you my friend, don't come to me screaming communism"
+    riddle_1()
+    end()
+r = 0 
+def water():
+    print "You must water the plants"
+    print "You need to guess the right amount to get the water"
+    my_number = random.int(1,50)
+    guess = int(input("Enter a guess: "))
+    while guess != my_number:
+        print "Guess again!"
+        guess = int(input("Enter a guess: "))
+    print "Plants Watered!"
+    riddle_2()
+
+def riddle_1():
+    random.choice(response_list)()
+    random.choice(riddlelist_1)()
+
+def riddle_2():
+    random.choice(response_list)
+    random.choice(riddlelist_2)
+def end():
+    if r == 10:
+        print "Good job! Here is your bundle of food for the day, now go to the kitchen to eat."
+
+start()
+end()
