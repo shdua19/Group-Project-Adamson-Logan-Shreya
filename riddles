@@ -2,48 +2,58 @@ import random
 
 
 #easy riddles
-
+z = 0
 def r_1():
-    input("Take off my skin, I won't cry, but you will. What Am I? " )
-    if r_1 == "onion" or "Onion" or "An onion" or "An Onion" or "an onion":
+    answerr1 = input("Take off my skin, I won't cry, but you will. What Am I? " )
+    global z
+    if answerr1 == "onion" in answerr1 or "Onion" in answerr1 or "An onion" in answerr1 or "An Onion" in answerr1 or "an onion" in answerr1:
         print "Correct, you can move ahead"
-        r = r + 1 
+        z = z + 1 
+        end()
         riddle_1()
     else:
         print "You were wrong"
         riddle_2()
 def r_2(): 
-    input("It looks green, it opens red. What you eat is red, but what you spit out is black, what is it? ")
-    if r_2 == "Watermelon" or "A watermelon" or "watermelon":
+    answerr2 = input("It looks green, it opens red. What you eat is red, but what you spit out is black, what is it? ")
+    global z
+    if answerr2 == "Watermelon" in answerr2 or "A watermelon" in answerr2 or "watermelon" in answerr2:
         print "Correct, you may move ahead"
-        r = r + 1 
+        z = z + 1 
+        end()
         riddle_1()
     else:
-        print "You were wrong"
+        print "You were wrong."
         riddle_2()
 def r_3(): 
-    input("I get hot but I never sweat I cook things but Im not a chef I have a door but you dont go through me I can sometimes clean myself but Im not a person I can be gas or electric but Im not a car, what am I? ")
-    if r_3 == "oven" or "an oven" or "An oven" or "oven" or "An Oven":
+    answerr3 = input("I get hot but I never sweat I cook things but I\'m not a chef I have a door \nbut you don\'t go through me I can sometimes clean myself but Im not a person \nI can be gas or electric but I\'m not a car, what am I? ")
+    global z
+    if answerr3 == "oven" in answerr3 or "an oven" in answerr3 or "An oven" in answerr3 or "oven" in answerr3 or "An Oven" in answerr3:
         print "Correct, you can move ahead"
-        r = r + 1 
+        z += 1 
+        end()
         riddle_1()
     else:
         print "You were wrong"
         riddle_2()
 def r_4(): 
-    input("What table can we eat?" )
-    if r_4 == "A vegtable" or "A Vegtable" or "Vegtable" or "Vegtable":
+    global z
+    answerr4 = input("What table can we eat? " )
+    if answerr4 == "A vegetable" in answerr4 or "A Vegetable" in answerr4 or "vegetable" in answerr4 or "Vegetable" in answerr4:
         print "Correct, you can move ahead"
-        r = r + 1 
+        z = z + 1 
+        end()
         riddle_1()
     else:
         print "You were wrong"
         riddle_2()
 def r_5(): 
-    input("Why do watermelons have fancy weddings? ")
-    if r_5 == "They canteloupe" or "They Canteloupe":
+    global z
+    answerr5 = input("Why do watermelons have fancy weddings? ")
+    if answerr5 == "They canteloupe" in answerr5 or "They Canteloupe" in answerr5:
         print "Correct you may move ahead"
-        r = r + 1 
+        z = z + 1 
+        end()
         riddle_1()
     else:
         print "You were wrong"
@@ -52,42 +62,52 @@ def r_5():
 #hard riddles
 
 def h_1(): 
-    input("I can fly but have no wings. I can cry but I have no eyes. Wherever I go, darkness follows me. What am I? ")
-    if h_1 == "A cloud" or "A Cloud":
+    answerh1 = input("I can fly but have no wings. I can cry but I have no eyes. Wherever I go, darkness follows me. What am I? ")
+    global z
+    if answerh1 == "A cloud" in answerh1 or "A Cloud" in answerh1:
         print "Correct, you may move ahead"
-        r = r + 1 
+        z = z + 1 
+        end()
         riddle_1()
     else:
         water()
 def h_2(): 
-    input("I always run but never walk, Have a mouth but never talk. What am I? ")
-    if h_2 == "A river" or "A River":
+    global z
+    answerh2 = input("I always run but never walk, Have a mouth but never talk. What am I? ")
+    if answerh2 == "A river" in answerh2 or "A River" in answerh2:
         print "Correct, you may move ahead"
-        r = r + 1 
+        z = z + 1 
+        end()
         riddle_1()
     else:
         water()
 def h_3(): 
-    input("Two in a corner, 1 in a room, 0 in a house, but 1 in a shelter. What am I?")
-    if h_3 == "R" or "r" or "The letter R" or "The letter r":
+    global z
+    answerh3 = input("Two in a corner, 1 in a room, 0 in a house, but 1 in a shelter. What am I?")
+    if answerh3 == "R" in answerh3 or "r" in answerh3 or "The letter R" in answerh3 or "The letter r" in answerh3:
         print "Correct you may move ahead"
-        r = r + 1 
+        z = z + 1 
+        end()
         riddle_1()
     else:
         water()
 def h_4(): 
-    input("I have an eye but am blind, a sea, but no water; a bee, but no honey; Tea but no coffee; and a why, but no answer. What am I? ")
-    if h_4 == "The alphabet" or "The Alphabet":
+    answerh4 = input("I have an eye but am blind, a sea, but no water; a bee, but no honey; \nTea but no coffee; and a why, but no answer. What am I? ")
+    global z
+    if answerh4 == "The alphabet" in answerh4 or "The Alphabet" in answerh4:
         print "Correct, you may move ahead"
-        r = r + 1 
+        z = z + 1 
+        end()
         riddle_1()
     else:
         water()
 def h_5(): 
-    input("How many eggs can you put in an empty box? ")
-    if h_5 == "One" or "one":
+    answerh5 = input("How many eggs can you put in an empty box? ")
+    global z
+    if answerh5 == "One" in answerh5 or "one" in answerh5:
         print "Correct, you may move ahead"
-        r = r + 1 
+        z = z + 1 
+        end()
         riddle_1()
     else:
         water()
@@ -110,17 +130,19 @@ def start():
     print "Welcome to the Agricultural Area"
     print "Here we solve riddles and water plants to get food to the kitchen"
     q_= input("Are you ready, yes or no? " )
-    if q_ == "Yes" or "yes":
+    if q_ == "yes":
         print "Okay let's go. Just remember, the more riddles you answer incorrectly, the more plants you have to water"
+        end()
+        riddle_1()
     else:
         print "No food for you my friend, don't come to me screaming communism"
-    riddle_1()
-    end()
-r = 0 
+    global z
+
+
 def water():
     print "You must water the plants"
     print "You need to guess the right amount to get the water"
-    my_number = random.int(1,50)
+    my_number = random.int(1,10)
     guess = int(input("Enter a guess: "))
     while guess != my_number:
         print "Guess again!"
@@ -129,15 +151,21 @@ def water():
     riddle_2()
 
 def riddle_1():
-    random.choice(response_list)()
-    random.choice(riddlelist_1)()
+    a = random.choice(response_list)
+    b = random.choice(riddlelist_1)
+    a()
+    b()
 
 def riddle_2():
-    random.choice(response_list)
-    random.choice(riddlelist_2)
+    c = random.choice(response_list)
+    d = random.choice(riddlelist_2)
+    c()
+    d()
+    
 def end():
-    if r == 10:
+    global z
+    if z == 5:
         print "Good job! Here is your bundle of food for the day, now go to the kitchen to eat."
 
 start()
-end()
+
